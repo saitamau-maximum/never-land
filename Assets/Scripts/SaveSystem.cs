@@ -12,7 +12,7 @@ public static class SaveSystem
 
         string savePath = Path.Combine(
             SaveDirectory,
-            "SaveData" + slotNumber + ".json"
+            "SaveDataFile" + slotNumber + ".json"
         );
 
         string json = JsonUtility.ToJson(data, true);
@@ -27,7 +27,7 @@ public static class SaveSystem
     {
         string savePath = Path.Combine(
             SaveDirectory,
-            "SaveData" + slotNumber + ".json"
+            "SaveDataFile" + slotNumber + ".json"
         );
 
         if (!File.Exists(savePath))
