@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "Unity.Services.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Unity.Services.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Services.Core.dll": {}
+        }
+      },
+      "Unity.Services.Core.Internal/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.Services.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Services.Core.Internal.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Services.Core.Internal.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Unity.Services.Core/1.0.0": {
+      "type": "project",
+      "path": "Unity.Services.Core.csproj",
+      "msbuildProject": "Unity.Services.Core.csproj"
+    },
+    "Unity.Services.Core.Internal/1.0.0": {
+      "type": "project",
+      "path": "Unity.Services.Core.Internal.csproj",
+      "msbuildProject": "Unity.Services.Core.Internal.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "Unity.Services.Core >= 1.0.0",
+      "Unity.Services.Core.Internal >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Srs_i\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.Telemetry.csproj",
+      "projectName": "Unity.Services.Core.Telemetry",
+      "projectPath": "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.Telemetry.csproj",
+      "packagesPath": "C:\\Users\\Srs_i\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Temp\\obj\\Unity.Services.Core.Telemetry\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Srs_i\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {
+            "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.csproj": {
+              "projectPath": "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.csproj"
+            },
+            "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.Internal.csproj": {
+              "projectPath": "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.Internal.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.200"
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

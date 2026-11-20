@@ -1,0 +1,181 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.Telemetry.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.csproj",
+        "projectName": "Unity.Services.Core",
+        "projectPath": "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.csproj",
+        "packagesPath": "C:\\Users\\Srs_i\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Temp\\obj\\Unity.Services.Core\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Srs_i\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.Internal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.Internal.csproj",
+        "projectName": "Unity.Services.Core.Internal",
+        "projectPath": "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.Internal.csproj",
+        "packagesPath": "C:\\Users\\Srs_i\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Temp\\obj\\Unity.Services.Core.Internal\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Srs_i\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.csproj": {
+                "projectPath": "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.Telemetry.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.Telemetry.csproj",
+        "projectName": "Unity.Services.Core.Telemetry",
+        "projectPath": "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.Telemetry.csproj",
+        "packagesPath": "C:\\Users\\Srs_i\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Temp\\obj\\Unity.Services.Core.Telemetry\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Srs_i\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.csproj": {
+                "projectPath": "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.csproj"
+              },
+              "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.Internal.csproj": {
+                "projectPath": "C:\\Users\\Srs_i\\game\\never-land\\never_land\\Unity.Services.Core.Internal.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
