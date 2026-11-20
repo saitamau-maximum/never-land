@@ -5,6 +5,6 @@ public class SceneChange : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Forest");
+        SceneManager.LoadScene("Forest 1");
     }
 }
