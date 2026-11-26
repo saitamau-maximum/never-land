@@ -2,34 +2,30 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    // 追従する対象（プレイヤーの駒）
     public Transform target;
-    
-    // 追従の滑らかさ（値が小さいほど遅れてついてくる）
     public float smoothSpeed = 0.125f;
-    
-    // プレイヤーとカメラの距離（自動計算されます）
-    private Vector3 offset;
 
     void Start()
     {
-        if (target != null)
-        {
-            // ゲーム開始時のカメラとプレイヤーの位置関係（距離）を記憶する
-            offset = transform.position - target.position;
-        }
+        SnapToTarget();
     }
 
-    // プレイヤーの移動（Update）が終わった後にカメラを動かすため LateUpdate を使う
-    void FixedUpdate()
+    void LateUpdate()
     {
         if (target == null) return;
 
-        // 目標となるカメラの位置を計算
-        Vector3 desiredPosition = target.position + offset;
-        
-        // 現在の位置から目標位置へ滑らかに移動させる
+        // 目標位置（Zは強制的に -10f）
+        Vector3 desiredPosition = new Vector3(target.position.x, target.position.y, -10f);
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+        
+        // 他のスクリプトがZを0にしても、ここで必ず -10f に上書きする
+        smoothedPosition.z = -10f;
         transform.position = smoothedPosition;
+    }
+
+    public void SnapToTarget()
+    {
+        if (target == null) return;
+        transform.position = new Vector3(target.position.x, target.position.y, -10f);
     }
 }
