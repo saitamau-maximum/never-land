@@ -1,15 +1,19 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class WarpDoor : MonoBehaviour // ← ここをファイル名と同じにする
+public class あなたのスクリプト名 : MonoBehaviour
 {
     public string nextSceneName;
+    private bool isTransitioning = false; // ★クラスの「中」に書く
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
+        if (isTransitioning) return; // ★すでに移動中なら何もしない
+
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(nextSceneName);
+            isTransitioning = true; // ★移動中フラグをONにする
+            SceneFader.Instance.FadeToScene(nextSceneName);
         }
     }
-}
+} // ← この一番最後の「}」より下にコードを書かない！
